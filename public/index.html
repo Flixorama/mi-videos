@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flixorama</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      padding: 20px;
+    }
+    h1 {
+      color: #00ffff;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #00cccc;
+      border-bottom: 2px solid #00cccc;
+      padding-bottom: 5px;
+    }
+    details {
+      margin: 10px 0 20px;
+      background: #1a1a1a;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #00ffcc;
+    }
+    video {
+      width: 100%;
+      max-width: 700px;
+      margin: 10px 0;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+    .episode-title {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 Flixorama</h1>
+
+  <!-- Películas -->
+  <h2>🎞 Películas</h2>
+  <div class="section">
+    <div class="episode-title">Batman</div>
+    <video controls src="peliculas/batman.mp4"></video>
+  </div>
+
+  <!-- Series -->
+  <h2>📺 Series</h2>
+  <details>
+    <summary>Loki</summary>
+    <details>
+      <summary>Temporada 1</summary>
+      <div class="episode-title">Episodio 1</div>
+      <video controls src="series/loki/temporada1/ep1.mp4"></video>
+      <div class="episode-title">Episodio 2</div>
+      <video controls src="series/loki/temporada1/ep2.mp4"></video>
+    </details>
+    <details>
+      <summary>Temporada 2</summary>
+      <div class="episode-title">Episodio 1</div>
+      <video controls src="series/loki/temporada2/ep1.mp4"></video>
+    </details>
+  </details>
+
+  <!-- Animes -->
+  <h2>🍥 Animes</h2>
+  <details>
+    <summary>Naruto</summary>
+    <details>
+      <summary>Temporada 1</summary>
+      <div class="episode-title">Episodio 1</div>
+      <video controls src="animes/naruto/temporada1/ep1.mp4"></video>
+    </details>
+  </details>
+
+  <!-- Trailers -->
+  <h2>🔥 Trailers</h2>
+  <div class="section">
+    <div class="episode-title">Dune 2</div>
+    <video controls src="trailers/dune-trailer.mp4"></video>
+  </div>
+
+</body>
+</html>
